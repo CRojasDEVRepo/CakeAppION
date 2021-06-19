@@ -1,0 +1,27 @@
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-img [src]="urlStorage + product.image"></ion-img>
+  <h1 id="product-title" class="display-in-row">{{product.name}}</h1>
+  <ion-icon name="star" class="display-in-row" id="star-space"></ion-icon>
+  <p class="display-in-row">{{product.score}}</p>
+  <p>{{product.description}}</p>
+
+  <ion-card class="display-in-row">
+    <ion-card-header>
+      <ion-card-title>Delivery Time</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-icon name="time"></ion-icon>
+      {{product.delivery_time}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="display-in-row">
+      <ion-card-header>
+        <ion-card-title>Total</ion-card-title>
+      </ion-card-header>
+      <ion-card-content> $ {{product.price}} </ion-card-content>
+    </ion-card>
+    <ion-button size="large" (click)="orderProduct()"> SEND ORDER <ion-icon name="add-circle-outline"></ion-icon>
+    </ion-button>
+</ion-content>
+

@@ -1,0 +1,4 @@
+<div (click)="filterEvent(optionFilter.id)" [ngClass]="optionFilter.id == filterActived ? 'active' : ''" class="filter-option">
+  <ion-img *ngIf = "optionFilter.icon" [src]="optionFilter.icon"></ion-img>
+  <p *ngIf = "!optionFilter.icon">{{optionFilter.label}}</p>
+</div>

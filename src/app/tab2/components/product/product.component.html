@@ -1,0 +1,13 @@
+<a [routerLink]="['product-detail/' + product._id]">
+<ion-card>
+  <ion-card-header>
+    <ion-img [src]="urlStorage + product.image"></ion-img>
+    <ion-card-title>{{product.name}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{product.description}}
+    <h4>{{product.price}}</h4>
+  </ion-card-content>
+</ion-card>
+</a>

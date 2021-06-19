@@ -1,0 +1,25 @@
+<ion-content class="ion-padding">
+  <h3 class="header-form">
+    SignIn
+  </h3>
+  <section class="form-container">
+    <div class ="logo-app">
+      <ion-img src="assets/icon/ic_logo.png"></ion-img>
+    </div>
+    <br>
+    <form [formGroup]="formGroupSignin">
+      <ion-item>
+        <ion-label color="secondary" position="floating">Email addrress</ion-label>
+        <ion-input formControlName="email" type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="secondary" position="floating">Password</ion-label>
+        <ion-input formControlName="password" type="password"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button (click)="submitSignin()" [disabled]="formGroupSignin.invalid" shape="round" expand="full">Log In</ion-button>
+
+    </form>
+  </section>
+
+</ion-content>

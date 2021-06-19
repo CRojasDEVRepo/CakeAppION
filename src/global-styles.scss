@@ -1,0 +1,24 @@
+a{
+    text-decoration: none;
+}
+
+.form-container{
+    border: 1px solid #f2f2f2;
+    padding: 30px 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #ccc;
+    text-align: center;
+}
+
+.header-form{
+    font-size: 1.95em;
+    font-weight: bold;
+}
+
+.logo-app{
+    display:flex;
+    justify-content: center;
+    ion-img{
+        width: 240px;        
+    }
+}

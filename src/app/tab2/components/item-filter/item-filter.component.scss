@@ -1,0 +1,34 @@
+.filter-option{
+    width: 60px;
+    height: 60px;
+    //border: 1px solid var(--ion-color-secondary);
+    border-radius: 50%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    p{
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #5DAC88;
+    }
+    &:hover{
+        background-color: var(--ion-color-secondary);
+        cursor: pointer;
+        p{
+            color:#fff;
+        }
+    }    
+    ion-img{
+        width: fit-content;
+    }
+}
+
+.active{
+    background-color: var(--ion-color-secondary);
+    p{
+        color: #ffff;
+    }
+
+}

@@ -1,0 +1,39 @@
+ion-content {
+    --ion-background-color: #f2f2f2;
+}
+
+ion-card {
+    --ion-background-color: rgb(238, 238, 238); 
+    border-radius: 20px;
+    border-style: none;
+
+    ion-card-content {
+        color: rgb(0, 0, 0);
+        font-weight: normal;
+        font-size: 2em;
+    }
+}
+
+#product-title {
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: Marker Felt, fantasy;
+}
+
+.star-space {
+    margin-left: 50px;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    bottom: 50px;
+    position: 'fixed';
+    --border-radius: 30px;
+}
+
+.display-in-row {
+    display: inline-block;
+    padding: 5px;
+  }
+
+
